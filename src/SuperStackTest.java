@@ -24,16 +24,25 @@ class SuperStackTest {
 	/**
 	 * @throws java.lang.Exception
 	 */
-	@AfterEach
-	void tearDown() throws Exception {
-	}
+	//@AfterEach
+	//void tearDown() throws Exception {
+	//}
 
 	/**
 	 * Test method for {@link SuperStack#isEmpty()}.
 	 */
 	@Test
 	void testIsEmpty() {
-		fail("Not yet implemented");
+		// Create empty stack and check for emptiness!
+		
+		SuperStack<Integer> stack = new SuperStack<Integer>(1);
+		boolean result = stack.isEmpty();
+		assertTrue(result);
+
+		stack.push(new Integer(0));
+
+		assertFalse(stack.isEmpty());
+		
 	}
 
 	/**
